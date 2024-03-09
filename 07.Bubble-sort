@@ -1,0 +1,19 @@
+public class Main
+{
+	public static void main(String[] args) {
+		int ar[]={5,4,1,3,2,4,9,2};
+		int n=ar.length;
+		for(int i=0;i<n-1;i++){
+		    for(int j=0;j<n-1-i;j++){
+		        if(ar[j]>ar[j+1]){
+		            int t=ar[j];
+		            ar[j]=ar[j+1];
+		            ar[j+1]=t;
+		        }
+		    }
+		}
+		for(int i:ar){
+		    System.out.print(i);
+		}
+	}
+}
